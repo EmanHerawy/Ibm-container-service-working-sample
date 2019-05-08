@@ -7,7 +7,10 @@ elif [ "${PWD##*/}" == "scripts" ]; then
 else
     echo "Please run the script from 'scripts' or 'scripts/create' folder"
 fi
-
+chmod -R 755 ${PWD}
+echo ""
+echo "=> CREATE_ALL: Creating docker"
+create/create_docker.sh $@
 echo ""
 echo "=> CREATE_ALL: Creating storage"
 create/create_storage.sh $@

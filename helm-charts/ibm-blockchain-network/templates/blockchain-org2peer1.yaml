@@ -65,7 +65,7 @@ spec:
         - name: CORE_PEER_DISCOVERY_TOUCHPERIOD
           value: 60s
         - name: CORE_VM_ENDPOINT
-          value: unix:///host/var/run/docker.sock
+          value: tcp://docker:2375
         - name: CORE_PEER_LOCALMSPID
           value: Org2MSP
         - name: CORE_PEER_MSPCONFIGPATH
